@@ -2,7 +2,7 @@
   / _ \/ (_)__ ____  / /_/  |/  /__ ____ / /__
  / ___/ / / _ `/ _ \/ __/ /|_/ / _ `(_-</  '_/
 /_/  /_/_/\_,_/_//_/\__/_/  /_/\_,_/___/_/\_\
-v1.0.0 - Input masking plugin for jQuery. - http://portablesheep.github.com/PliantMask/
+v1.0.1 - Input masking plugin for jQuery. - http://portablesheep.github.com/PliantMask/
 Copyright 2011-2013, Michael Gunderson - Dual licensed under the MIT or GPL Version 2 licenses.
 */
 (function($) {

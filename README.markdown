@@ -10,5 +10,7 @@ It started out as a Pliant only plugin, but was separated so it's not dependant 
 
 Changle Log
 --------------------
+* **1.0.1**
+	* Version bump to fix jQuery plugin site hook.
 * **1.0.0**
 	* Initial version.
