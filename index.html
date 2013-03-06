@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>jqMask Example</title>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="jquery.pliantmask.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var ssnField = $('#ssn'),
+				dobField = $('#dob'),
+				phoneField = $('#phone'),
+				phoneExtField = $('#phoneExt'),
+				urlField = $('#url'),
+				maskInst = $('form').pliantmask({
+					fields: [
+						{
+							field: ssnField,
+							mask: {
+								rule: '9{3}-9{2}-9{4}'
+							}
+						},
+						{
+							field: dobField,
+							mask: 'date'
+						},
+						{
+							field: phoneExtField,
+							mask: 'phoneWithExt'
+						}
+					]
+				});
+			maskInst.Mask(phoneField, 'phone');
+		});
+	</script>
+	<style type="text/css">
+		.fieldRow {
+			margin: 4px;
+		}
+		.fieldRow label {
+			display: block;
+		}
+		.input-mask {
+			color: #CCCCCC;
+		}
+	</style>
+</head>
+<body>
+	<form action="" id="mainForm">
+		<div class="fieldRow">
+			<label for="ssn">SSN:</label>
+			<input id="ssn" name="ssn" type="text">
+		</div>
+		<div class="fieldRow">
+			<label for="dob">DOB (mask on focus):</label>
+			<input id="dob" name="dob" type="text">
+		</div>
+		<div class="fieldRow">
+			<label for="phone">Phone:</label>
+			<input id="phone" name="phone" type="text">
+		</div>
+		<div class="fieldRow">
+			<label for="phoneExt">Phone w/Optional Ext:</label>
+			<input id="phoneExt" name="phoneExt" type="text">
+		</div>
+		<div class="fieldRow">
+			<label for="url">URL:</label>
+			<input id="url" name="url" type="text" mask="url">
+		</div>
+	</form>
+</body>
+</html>
